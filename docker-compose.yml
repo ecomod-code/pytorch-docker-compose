@@ -42,7 +42,7 @@ services:
     image: sinzlab/pytorch
     container_name: pytorch
     volumes:
-      - "./jupyter_home:/home/"
+      - "./jupyter_notebooks:/notebooks"
     expose:
       - "8888"
     environment:
