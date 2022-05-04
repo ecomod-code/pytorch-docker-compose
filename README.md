@@ -57,6 +57,8 @@ curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidi
   
 sudo apt-get update
 sudo apt-get install nvidia-container-runtime
+
+sudo service docker restart
 ```
 
 
