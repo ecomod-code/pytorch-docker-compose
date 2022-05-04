@@ -40,6 +40,11 @@ services:
   pytorch:
     restart: unless-stopped  
     image: sinzlab/pytorch
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
     container_name: pytorch
     volumes:
       - "./jupyter_notebooks:/notebooks"
